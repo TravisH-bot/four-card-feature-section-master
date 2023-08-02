@@ -4,10 +4,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--font);
 }
 
 :root {
-  /* Font */
+  /* Font - 200, 400, 600 */
   --font: "Poppins", sans-serif;
 
   /* Primary Colors */
@@ -20,4 +21,120 @@
   --very-dark-blue: hsl(234, 12%, 34%);
   --grayish-blue: hsl(229, 6%, 66%);
   --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-light-gray);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 92rem;
+  height: 54rem;
+}
+
+.title-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 92rem;
+  height: 17rem;
+  padding: 0 25rem 3.5rem 25rem;
+}
+
+.title-info .thin {
+  font-size: 2.8rem;
+  color: var(--grayish-blue);
+  font-weight: 200;
+}
+
+.title-info .thick {
+  font-size: 2.8em;
+  color: var(--very-dark-blue);
+  font-weight: 600;
+  margin-top: -0.8rem;
+}
+
+.title-info p {
+  font-size: 1.2rem;
+  color: var(--grayish-blue);
+  font-weight: 200;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 92rem;
+  height: 37rem;
+}
+
+.card {
+  width: 27rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  box-shadow: 0 1rem 1.2rem 0 var(--grayish-blue);
+}
+
+.card h3 {
+  color: var(--very-dark-blue);
+}
+
+.card p {
+  color: var(--grayish-blue);
+}
+
+.supervisor {
+  margin-left: 3rem;
+  border-top: 0.3rem solid var(--cyan);
+}
+
+.team-karma {
+  width: 31rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team {
+  border-top: 0.3rem solid var(--red);
+  margin-bottom: 2rem;
+}
+
+.karma {
+  border-top: 0.3rem solid var(--orange);
+}
+
+.calculator {
+  margin-right: 3rem;
+  border-top: 0.3rem solid var(--blue);
+}
+
+.graphic {
+  display: flex;
+  justify-content: end;
+  margin-top: 4rem;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.attribution {
+  margin-top: 3rem;
 }
